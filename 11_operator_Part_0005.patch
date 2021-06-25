@@ -1,0 +1,75 @@
+11_operator_Part_0005
+****************************************
+
+Excersise -:
+	
+1.	WAP to check given input number is poweroff 2 or not
+       8,16,32 .....
+
+
+       8 
+       07 -0000 0111  not
+       08 -0000 1000  Power of 2
+       09 -0000 1001  not
+       16 -0001 0000  Power of 2
+       32 -0010 0000  Power of 2
+
+consider 
+
+       07 -0000 0111  not
+  &    08 -0000 1000  Power of 2
+---------------------------------------
+           0000 0000  
+           num & (num-1) ==0 than number is powerof 2
+
+10 
+     0000 1010 =10
+     0000 1001 =9
+     ---------------
+     0000 1000= 8
+
+
+     0000 1000
+           111 
+          1000
+
+0000 0011 3
+0000 0100 4
+
+       08 -0000 1000  Power of 2
+       16 -0001 0000  Power of 2
+       32 -0010 0000  Power of 2
+
+
+
+
+
+
+
+
+
+2. Take 1 input one is num , 2nd is position, 3rd how many bits
+    input =
+
+
+i am taking example for char 
+
+
+      num= 0001 1000
+      pos= 5th
+      bits= 3
+
+     output = 1001 1000  
+ 
+
+
+i need to do with 4 byte integer
+    pos= 17th,
+    bits =10bits,
+    num= 0xF0 00 01 10 
+3. Set odd bits of perticular number
+
+
+input    0010 1000
+output   0111 1101    
+--------------------------------------------

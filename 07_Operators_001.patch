@@ -1,0 +1,317 @@
+Operators In C -:
+--------------------------------------------------------------------
+
+Left Topic-:
+	 How float stored in memory
+	
+
+/* operaator in C language */
+1. Unary operator - one operand
+2. Binary operator - two operand
+3  Ternary operator - - three operand
+
+
+
+1. Arithmetic operator
+	+, -, *, / ,%
+2.Assignment Operator
+	=
+3 compound Assignment Operator
+    +=  -= *= /= %=
+a+=b -> a=a+b
+4. Relational Operators
+     > >= < <= == !=
+5 Size of operator
+   sizeif()
+6 Logical operator
+	 && || !
+
+
+7 Bitwise operator 
+	& | ^ ~
+8.Ternary operator
+    ?_:_
+9.Shift Operator
+    << >>
+10 Increment & Decrement Operator
+	++ --
+11 Comma Operator
+	 ,
+12 Grouping Operator
+	()
+
+
+
+
+13 reference operator 
+	& (Array)
+14 Dereference operator
+	* (pointer)
+15 Index operator
+	[] (Array)
+16 Dot operator
+	. (Staructure)
+17 Aerow Operator
+	->  (Structure pointer)
+
+--------------------------------------------------------------
+
+
+
+
+1. Arithmetic operator
+	+, -, *, / ,%
+
+Ex-1
+
+#include<stdio.h>
+int  main()
+{
+
+	//Arithmetic
+ 	int a=10,b=20,c=33;
+        
+	printf("Hello World...\n");
+	printf("====================output============.\n");
+	printf("Adddition =%d\n",a+b);
+
+	printf("sub =%d\n",a-b);
+	printf("Mul =%d\n",a*b);
+	printf("Div =%d\n",b/a);
+	printf("modulo =%d\n",c%a);
+	return 0;
+}
+
+Hello World...
+====================output============.
+Adddition =30
+sub =-10
+Mul =200
+Div =2
+modulo =3
+
+
+
+
+2.Assignment Operator
+	=
+
+
+#include<stdio.h>
+int  main()
+{
+
+	//Arithmetic
+ 	int a=10,b=20,c=33,i,j,k;
+        
+        i=a+b+c;
+   
+	 j=10,24;
+         k=(10,24);
+
+	printf("Hello World...\n");
+	printf("====================output============.\n");
+	printf("Adddition =%d\n",i);
+	printf("J =%d\n",j); 
+	printf("K =%d\n",k); 
+
+
+
+	return 0;
+
+
+
+
+}
+
+Hello World...
+====================output============.
+Adddition =63
+J =10
+K =24
+
+
+#include<stdio.h>
+int  main()
+{
+
+	//Arithmetic
+ 	int a=10,b=20,c=33,i,j,k;
+        
+        i=a+b+c;
+   
+	 j=10,24,34,54,56;
+         k=(10,24,34,54,56);
+
+	printf("Hello World...\n");
+	printf("====================output============.\n");
+	printf("Adddition =%d\n",i);
+	printf("J =%d\n",j); 
+	printf("K =%d\n",k); 
+
+
+
+	return 0;
+
+
+
+
+}
+
+Hello World...
+====================output============.
+Adddition =63
+J =10
+K =56
+**************************************************
+
+3 compound Assignment Operator
+    +=  -= *= /= %=
+
+
+a=20
+b=10
+
+a=a+b ->> a+=b;
+
+
+Ex-
+
+#include<stdio.h>
+int  main()
+{
+
+	//Compound
+ 	int a=10,b=20,c=33;
+        
+        // a-=b;
+        // a*=b;
+        // a/=b;
+         //c%=b;
+
+	printf("Hello World...\n");
+	printf("====================output============.\n");
+
+	printf("A=%d B=%d\n",a,b);
+         a+=b;  ->> //a=a+b
+	printf("After a+=b -:: A=%d B=%d\n",a,b);
+
+	printf("A=%d B=%d\n",a,b);
+         a-=b;
+	printf("After a-=b -:: A=%d B=%d\n",a,b);
+	
+	printf("A=%d B=%d\n",a,b);
+         a*=b;
+	printf("After a*=b -:: A=%d B=%d\n",a,b);
+	
+	printf("A=%d B=%d\n",a,b);
+         a/=b;
+	printf("After a/=b -:: A=%d B=%d\n",a,b);
+
+	printf("C=%d B=%d\n",c,b);
+         c%=b;
+	printf("After Module -:: C=%d B=%d\n",c,b);
+	return 0;
+}
+
+
+Hello World...
+====================output============.
+A=10 B=20
+After a+=b -:: A=30 B=20
+A=30 B=20
+After a+=b -:: A=10 B=20
+A=10 B=20
+After a*=b -:: A=200 B=20
+A=200 B=20
+After a/=b -:: C=33 B=20
+A=10 c=33
+After Module -:: A=10 C=13
+
+----------------------------------------
+Next -: 
+
+4. Relational Operators
+     > >= < <= == !=
+5 Size of operator
+   sizeif()
+6 Logical operator
+	 && || !
+7 Bitwise operator 
+	& | ^ ~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

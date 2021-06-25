@@ -1,0 +1,341 @@
+Operator 002
+***************************************************
+
+
+4. Relational Operators
+     > >= < <= == !=
+5 Size of operator
+   sizeif()
+6 Logical operator
+	 && || !
+
+
+7 Bitwise operator 
+	& | ^ ~
+
+----------------------------------------------
+4. Relational Operators
+     > >= < <= == !=
+ 
+    < less than
+    <= less than equal to
+    == equal to
+    != not equal to
+    > greator than 
+    >= greator than or equal to
+
+
+
+   a=9 , b=5
+
+Expression  Relation     Value of expression
+----------------------------------------------------
+a<b         False       0
+a<=b        False       0
+a==b        False       0
+a!=b        True        1
+
+a>=b        True        1
+a==0        False       0
+a>8         True        1
+2>4         True        1
+
+
+if(condition)
+	{
+		--------------
+		--------------
+		----------------
+
+	}
+else
+	{
+		----------------
+		-----------------
+		-------------------
+
+	}
+Ex- 1
+ #include<stdio.h>
+#define VAL 3
+int  main()
+{
+
+ 	int no, no1,i=23,j=25;  //21 45
+        
+       printf("Enter The Input number:\n");
+       scanf("%d %d",&no,&no1);
+
+	printf("Hello World...\n");
+	printf("====================output============.\n");
+	printf("\nOutput Values no is %d\n  no1 is %d\n",no,no1);
+
+         if(i=j)
+		 printf("I=%d 	J=%d\n",i,j);
+	 else
+		 printf("Bye....\n");	
+	 printf("====================Exit============.\n");
+
+	return 0;
+}
+
+o/p-:
+
+
+Enter The Input number:
+21
+45
+Hello World...
+====================output============.
+
+Output Values no is 21
+  no1 is 45
+I=25 	J=25
+====================Exit============.
+
+-------------------------------------------------------------------------
+
+6 Logical operator
+	 && || !
+
+operator  Name
+  &&      AND
+  ||      OR
+  !       NOT
+
+
+1.AND
+
+Table 
+
+condition 1    condition 2 	Result
+-----------------------------------------
+ False 		False 		False 
+ False 		True 		False 
+ True 		False 		False 
+ True 		Ture 		False 
+
+Note -: if both condition are True than and than only output is true otherwise false
+
+
+x y o/p
+0 0 0
+0 1 0
+1 0 0
+1 1 1
+
+if((expre) || (expre))
+   statement
+else
+   statement
+
+
+
+a=10 b=5 c=0;
+
+Expression   			condition/expre   	Result		  value
+---------------------------------------------------------------------------------
+(a==10) && (b>a)		true && false 		false 		    0
+
+(b>=a) && (b==3)		false && false	 	false 		    0
+
+a && b 				treu && true            true		    1
+
+a && c				true && false 		false 		    0
+
+
+
+#include<stdio.h>
+#define VAL 3
+int  main()
+{
+
+ 	int no=10, no1=20,i=23,j=25;
+        
+
+	printf("Hello World...\n");
+	printf("====================output============.\n");
+	printf("\nno=%d    No1=%d I=%d   J=%d\n  \n",no,no1,i,j);
+
+         if( (i<j)&& (i=20))
+		printf("\nCondition True -:::   no=%d    No1=%d I=%d   J=%d\n  \n",no,no1,i,j);
+	 else
+		printf("\nCondition False -:::   no=%d    No1=%d I=%d   J=%d\n  \n",no,no1,i,j);
+
+	 printf("====================Exit============.\n");
+	return 0;
+
+}
+
+o/p
+
+Hello World...
+====================output============.
+
+no=10    No1=20 I=23   J=25
+  
+
+Condition True -:::   no=10    No1=20 I=20   J=25
+  
+====================Exit============.
+
+
+
+
+#include<stdio.h>
+#define VAL 3
+int  main()
+{
+
+ 	int no=10, no1=20,i=23,j=25;
+        
+
+	printf("Hello World...\n");
+	printf("====================output============.\n");
+	printf("\nno=%d    No1=%d I=%d   J=%d\n  \n",no,no1,i,j);
+
+         if( (i>j)&& (i=20))
+		printf("\nCondition True -:::   no=%d    No1=%d I=%d   J=%d\n  \n",no,no1,i,j);
+	 else
+		printf("\nCondition False -:::   no=%d    No1=%d I=%d   J=%d\n  \n",no,no1,i,j);
+
+	 printf("====================Exit============.\n");
+
+	return 0;
+
+}
+
+o/p
+-
+Hello World...
+====================output============.
+
+no=10    No1=20 I=23   J=25
+/*
+ false && true
+   0   &&  1
+
+
+
+*/
+Condition False -:::   no=10    No1=20 I=23   J=25
+ 
+====================Exit============.
+
+Note-: If from both expression or condition, if any of expression getting false than it will not chek other operation.
+
+
+
+x y o/p
+0 0 0
+0 1 0
+1 0 0
+
+1 1 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
