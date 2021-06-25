@@ -1,0 +1,493 @@
+10_operator_Part_0004
+****************************************
+
+Bitwise operator in C
+
+Bitwise & Binary
+Bitwise | Binary
+Bitwise ^ Binary
+
+Bitwise ~ once complement
+Bitwise <<    left shift
+Bitwise  >>    right shift
+
+
+
+AND 
+
+x y o/p
+0 0 0
+0 1 0
+1 0 0
+1 1 1
+
+OR
+
+x y o/p
+0 0 0
+0 1 1
+1 0 1
+1 1 1
+
+
+
+0000 0001 0000 0001 0000 0001 0000 0001
+
+27th bit is set or not
+wants to clear 27th bit
+
+- Manipulation of data at bit level.
+
+
+char ch=
+
+  1010 1001 =0xA9
+
+
+7654 3210
+------------------------------------
+1010 1001 =0xA9
+
+char ch=0xA9
+char mask=0x20
+ 5th position what is bit we need to check ?
+1st Methos using mask
+checl set 
+	1010 1001 =0xA9
+	0010 0000 =0x20
+-------------------------------------
+	0010 0000 =0x20
+
+if(ch & mask )
+     {
+	printf("5th bit is set..\n");	
+	
+    }
+esle {
+	printf("5th bit is cleared..\n");	
+    }
+
+2nd Methos using 1 & shifting 
+
+check clear 4th position
+
+
+
+	1010 1001 =0xA9
+	0001 0000 =0x20
+-------------------------------------
+	000 0000 =0x00
+   
+
+if(ch & mask ==0 )
+     {
+	printf("4th bit is cleared..\n");	
+	
+    }
+esle {
+	printf("5th bit is set ..\n");	
+    }
+
+-----------------------------------------------------------------------
+3rd Methos using 1 & shifting 
+ 
+check 5th bit set or not 
+
+  
+	1010 1001 =0xA9
+  ch >>5
+
+
+        0000 0101 =0x05  (ch>>5)
+    &
+	0000 0001 =0x01  
+-------------------------------------
+	0000 0001 =0x01
+
+   
+
+if(ch >>5 & 1== 0x01 )  //if(ch >>5 & 1)  //
+     {
+	printf("5th bit is set..\n");	
+	
+    }
+esle {
+	printf("5th bit is cleared..\n");	
+    }
+
+check clear 4th position
+
+
+
+	1010 1001 =0xA9
+
+	0000 1010 =0x0A (ch >>4)
+& 
+	0000 0001 =0x01 
+
+-------------------------------------
+	0000 000 =0x00
+
+
+
+
+
+
+   
+
+if(ch >>4  & 1 == 0 ) //  if ( ~ (ch >>4  & 1)  )
+      {
+	printf("4th bit is cleared..\n");	
+	
+    }
+esle {
+	printf("5th bit is set ..\n");	
+    }
+
+-----------------------------------------------------------------------
+
+4th cleared or not
+
+Dought -
+1	   4
+      	1011 1001 =0xA9
+
+	0000 1011 =0x0A (ch >>4)
+& 
+	0000 0001 =0x01 
+
+-------------------------------------
+	0000 0001 =0x01 ==  (ch>>4 &1) =1
+
+
+         
+2          4
+      	1010 1001 =0xA9
+
+	0000 1010 =0x0A (ch >>4)
+& 
+	0000 0001 =0x01 
+
+-------------------------------------
+	0000 0000 =0x00
+
+
+
+cleard 
+else 
+ set
+
+
+if(ch>>4 &1 ==0)  //    1==0 ->> condition false and go to else part
+	{
+	  cleared
+	}
+else
+	{
+	   set
+	}
+
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+to clear perticular bit
+
+1          4
+      	1001 1011 =0x9b
+
+ >>  
+        0000 1001 =0x09  -   if we do >> operation than our value will be modified . than we will not shift original variable
+
+	1001 1011 =0x99
+&
+	1110 1111 = 
+-------------------------
+	1000 1011 ==  it is not affecting any other bit
+
+1 1st method using 
+
+1st step
+        0000 0001 =0x01
+        0001 0000 = (0x01 <<4)
+<<
+	    1110 1111 =  ~ (0x01 <<4)
+&
+        1001 1011 =0x9B
+-------------------------------- 
+	    1000 1011 =0x8B
+
+
+
+        1101 1111       3rd
+~ 
+        0001 0000 	2nd
+1<<4
+        0000 0001  	1st
+---------------------------
+                   0x01        
+
+
+
+Feed back -: priority 
+
+
+
+~ bit wise not
+ 
+   0001 0000 = value>>4 
+
+   0000 0001 = 1 
+
+
+
+1&1 =1
+1&0 =0
+
+
+
+BITWISE OR
+---------------------------------
+OR
+
+0|0 =0
+
+0|1 =1
+1|0 =1
+1|1 =1
+
+
+
+bits 0 or 1 bit
+
+ 0|1 =1 
+
+ 1|1=1
+
+  7654 321
+  0001 1001
+|
+
+
+
+  0000 0001 
+<<6
+  0100 0000
+|
+  0001 1001
+--------------------
+  0101 1001
+
+----------------------------------------------
+
+1 set bit
+		num | (1<<pos)
+    
+2 clear bit
+		num & ( ~(1<<pos))
+
+3 check  bit
+               num &  1<< pos
+			== 0 ->> bit is cleared
+			!= 0 -->> bit is set
+
+
+
+Excersise -:
+	
+1.	WAP to check given input number is poweroff 2 or not
+       8,16,32 .....
+
+2. Take 1 input one is num , 2nd is position, 3rd how many bits
+    input =
+
+
+i am taking example for char 
+
+
+      num= 0001 1000
+      pos= 5th
+      bits= 3
+
+     output = 1001 1000  
+
+
+
+i need to do with 4 byte integer
+    pos= 17th,
+    bits =10bits,
+    num= 0xF0 00 01 10 
+3. Set odd bits of perticular number
+
+
+input    0010 1000
+output   0111 1101    
+--------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

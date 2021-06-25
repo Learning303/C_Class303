@@ -1,0 +1,89 @@
+Commands -: cc 1.c
+
+
+   .c
+
+1. PreProcessor
+2. Translater
+3. Assembler
+4. Linker
+    .exe - Windos  /a.out - linux
+
+1. PreProcessor
+	- Include header file-
+	- Remove comments
+        - replace macro
+	- Conditional compilation (optional)
+
+Commands -:  cc -E 1.c -o 1.i
+
+2. Translator
+	- Convert program into Assembly language
+	- Check syntactical error
+ 
+     Commands -:  cc -S 1.i -o 1.s
+
+
+3. Assembler Stage
+	-Convert assembley program  into opcode
+	-Opcode are maschine understandable (binary )file.
+
+     Commands -:  cc -c 1.s -o 1.o
+
+4. Linker
+ - linker is responsible for linking library files
+ - the linker combine the object code of the library function with object code of our program
+ - Linker add Os  files and generate Executable
+
+
+
+#include<stdio.h>
+#define VAL 3
+int  main()
+{
+
+ 	int no=10,a;
+        
+        a=no+VAL;
+         // ANIl is here
+	 /*
+	  *Hwloo How are you
+	  *
+	  *
+	  * */
+         int pre=system(ls);
+	printf("Hello World...\n");
+	printf("====================output============.\n");
+	printf("Output =%d\n",a);
+
+	return 0;
+}
+
+
+   - system(ls)
+   -/lib/
+
+commands- cc 1.o -o p1
+		  p1 is executable
+	   cc 1.o
+
+*************************************************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

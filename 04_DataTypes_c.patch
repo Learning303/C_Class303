@@ -1,0 +1,210 @@
+04 _ 19_March_2021
+-------------------------------------
+
+Today topic -:
+- Errors in c-
+
+
+-	
+	Why we write Program?
+		Program is Process of Data
+
+Left Topic-:
+   Float double,
+
+next -: how value stored in int, char,
+
+
+
+Errors in c
+
+1.Compile time  error
+2. Runtime Errror
+
+1.Compile time  error
+	- Pre processor error:
+	     -stdio.h (pre-processor)
+         - Translator Error
+		-Syntax error(Missing paranthesis,Mising semicollun,Printing value without declaring)
+        -Linker Error
+		-Pre Define function error
+		-use define function
+2. Run time error
+-Segmentation fault
+	- A segmentation error occurs when a program trying to access memory location that is not allowed to acess
+
+
+
+      a.out		RAM 		CPU  
+      Harddisk
+
+
+RAM-: Cant aexecute program
+Cpu- Execute program
+- 
+
+
+-Bus Error
+	- Hardware Related Error
+	-Memory is not in haraware but we are trying to acess them
+
+- Floating point Exeption
+	-devide by Zero
+	-infinite are not possible
+
+------------------------------------------------------------------------------------------------
+Data types =:
+
+  int -: 4 byte
+  char -: 1 byte
+  float -: 4 byte
+  double -: 8 byte
+
+
+int 4 -
+0000 0000 0000 0000 0000 0000 0000 0000=Min   0  
+1111 1111 1111 1111 1111 1111 1111 1111=Max   4G -:0 to 4294967295
+
+0 to 4G
+
+
+Signed value
+	-2G ....... 0........+2G
+	-2147483648 ......0........2147483647
+unsigned value
+	0.....+4G
+        0..............4294967295
+
+--------------------------------------
+
+short int  -0 to 2G
+long int - (by default) - 0 to 4G
+
+Ex -:
+	short int i; // short integer(signed number) ->// 2 byte -1G.....0 1....+1G
+        short unsigned int i; // short intger unsigned //2 bytes  0 ....+2G
+	int i;// signed int  -4byte
+
+unsigned -: %u
+signed no -: %d 
+----------------------------------------------------------------- 
+1.Char variable
+
+  char -: 1 byte
+
+Signed char =
+unsigned char 
+
+-----------------------
+unsigned char i;
+
+ 0000 0000 = 0 Min
+ 1111 1111 = 255 Max
+
+Range to 0......255
+
+-------------------------
+Signed char 
+ char i;  
+ signed char i;
+
+
+size=1 byte
+Range - -128 ......-1 0 1 ......+128
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+   
+ 
+------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,272 @@
+03_1st Program in c
+==============================================
+
+
+Introduction
+-: Compiler
+-: OS concepts
+-: Diffrent between IDE and compiler (Native and GCC) -GCC and Keil
+-:introduction with linux commands
+	ls, mkdir, vi, rm, cp, mv, path
+
+     vi 1.c
+    ESC +i = insert mode;
+    Esc + :q! = Save without changes
+    Esc + :wq! = Save and exit
+
+Force fully stopped
+vi 1.c
+insert mode
+  write some code
+CTRL +ZZ
+..................
+
+swap file genereted
+
+ ls -la  -- shows hidden files
+
+	total 28
+drwxr-xr-x 2 aprajapa aprajapa  4096 Mar 16 22:40 .
+drwxr-xr-x 4 aprajapa aprajapa  4096 Mar 15 23:07 ..
+-rw-r--r-- 1 aprajapa aprajapa   658 Mar 15 23:08 01_introduction.patch
+-rw-r--r-- 1 aprajapa aprajapa    16 Mar 16 22:40 1.c
+-rw-r--r-- 1 aprajapa aprajapa 12288 Mar 16 22:40 .1.c.swp
+
+vi 1.c
+	option ... RECOVER
+
+vi 2.c
+content -:
+
+
+E325: ATTENTION
+Found a swap file by the name ".2.c.swp"
+          owned by: aprajapa   dated: Tue Mar 16 22:45:26 2021
+         file name: ~aprajapa/ANil_Learning/Classes/Akhila/2.c
+          modified: no
+         user name: aprajapa   host name: anil-prajapati
+        process ID: 31088 (still running)
+While opening file "2.c"
+             dated: Tue Mar 16 22:45:26 2021
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r 2.c"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file ".2.c.swp"
+    to avoid this message.
+
+Swap file ".2.c.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort:
+
+
+
+press R
+
+	Esc+ wq! -> save quite
+	rm .2.c.swp 
+
+Reference path && Absolute path
+./  -: present director
+../ -: Parent directory
+
+Copy sourcepath destinatiopath
+	cp p1.c p2.c  -- same directory
+
+
+Reference Path
+
+aprajapa@anil-prajapati:~/ANil_Learning/Classes/Akhila/8051/pointer$ cp p1.c p2.c
+aprajapa@anil-prajapati:~/ANil_Learning/Classes/Akhila/8051/pointer$ ls
+p1.c  p2.c
+aprajapa@anil-prajapati:~/ANil_Learning/Classes/Akhila/8051/pointer$ cp p1.c ../p1.c    -- present in source path
+
+Akhil
+8051
+pointer 
+ p1.c
+
+aprajapa@anil-prajapati:~/ANil_Learning/Classes/Akhila/8051/pointer$ cp p1.c ../../p1.c
+
+aprajapa@anil-prajapati:~/ANil_Learning/Classes/Akhila$ cp ./8051/pointer/p2.c ./  -- present in destination path
+
+
+cp sourcepath destinationpath
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+Akhila
+
+
+	8051  		C  		Linux
+	pointer       operator          process
+
+	p1.c
+	p2.c
+	test.c
+
+					 pwd 
+
+
+1st Way -:
+
+
+cp /home/aprajapa/ANil_Learning/Classes/Akhila/8051/pointer/test.c /home/aprajapa/ANil_Learning/Classes/Akhila/C/operator/test_1.c
+
+
+Source path -: /home/aprajapa/ANil_Learning/Classes/Akhila/8051/pointer/test.c
+Destination -: /home/aprajapa/ANil_Learning/Classes/Akhila/C/operator/test_1.c
+
+
+1st Way -:
+Akhila
+
+
+	8051  		C  		Linux
+	pointer       operator          process
+
+	p1.c
+	p2.c
+	test.c
+
+	My_Program.c			 pwd 
+
+
+
+where our curser is -: /home/aprajapa/ANil_Learning/Classes/Akhila/Linux/process
+
+
+commands -: cp ../../8051/pointer/My_Program.c ../../C/operator/My_function_1.c
+
+source path-: 			../../8051/pointer/My_Program.c
+
+Destination path -:		../../C/operator/My_function_1.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1st Program in c
+------------------------------------------------
+04 Basic Structure of C Program
+
+1. Include Header files(Pre processor directives)
+2. Function prototypes or function declaration
+3.Global variable declaration
+4.Minimum 1 function
+ main()
+	{
+
+		local variables
+		logic
+		call functions
+
+	}
+5. other functions body
+
+  //Structure details and Understanding
+
+#include<stdio.h>
+-: Header file consists of Declaration
+	( Function declaration,
+	  structure declaration,
+	  typedef,
+	  #define(macro),
+	  enum,
+	  union.)
+
+Function-:
+	declaration/prototype
+	defination
+	call
+
+standard Policy :
+		 Before calling function that function should be declared
+Declaration:
+		 information passed to the compiler
+bug:
+		 Logical error
+
+
+
+
+/* Above program
+	printf
+	initlize varianle
+	scanf printf
+	
+*/
+
+
+/*	1st Program	 */
+
+#include<stdio.h>
+
+int main()
+{
+
+	printf("Hello World\n");
+
+	return 0;
+}
+
+
